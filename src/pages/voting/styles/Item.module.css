@@ -1,0 +1,31 @@
+.emoji-item {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transform: scale(1);
+    transition: 0.2s;
+}
+.emoji-item:hover {
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+.emoji-item:active {
+    transform: scale(0.9);
+    transition: 0.1s;
+}
+.emoji {
+    margin: 0 !important;
+    font-size: 50px;
+}
+.vote-count {
+    margin: 0 !important;
+    font-size: 50px;
+}
+
+.borderLight {
+    border: 2px solid #7e6950;
+}
+.borderDark {
+    border: 2px solid #8196af;
+}

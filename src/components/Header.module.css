@@ -1,0 +1,35 @@
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 12px;
+}
+
+.header-themes{
+    display: flex;
+    gap: 10px;
+}
+
+.header-button {
+    font-size: 20px;
+    background: none;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+.header-button:focus {
+    outline: none;
+}
+.header-button:active {
+    opacity: 0.8;
+}
+
+.mode-dark {
+    background-color: #101010;
+    color: #fff;
+}
+
+.mode-light {
+    background-color: #ececec;
+    color: #000;
+}

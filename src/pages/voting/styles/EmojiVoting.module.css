@@ -1,0 +1,56 @@
+.voting-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    height: 100%;
+    flex: 1;
+
+}
+
+.voting-title {
+    margin: 10px 0;
+}
+
+.button-container {
+    display: flex;
+    gap: 40px;
+}
+
+.button {
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #3c3cff;
+    padding: 10px;
+    transform: scale(1.1);
+    transition: 0.1s;
+    margin: 10px 0;
+}
+
+.button:hover {
+    transform: scale(1.3);
+    transition: 0.1s;
+}
+
+.button:active {
+    background-color: #2f2fcd;
+    transform: scale(1.1);
+    transition: 0.1s;
+}
+
+.emoji-winner-list {
+    display: flex;
+    gap: 20px;
+}
+
+
+.mode-dark {
+    background-color: #000;
+    color: #fff;
+}
+
+.mode-light {
+    background-color: #fff;
+    color: #000;
+}
