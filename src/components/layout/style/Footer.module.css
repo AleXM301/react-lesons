@@ -1,0 +1,16 @@
+.footer-title{
+    margin: 0;
+    padding: 10px;
+}
+
+.mode-dark.footer {
+    background-color: var(--color-dark-header);
+    color: var(--color-light-header);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.mode-light.footer {
+    background-color: var(--color-light-header);
+    color: var(--color-dark);
+    transition: background-color 0.3s, color 0.3s;
+}

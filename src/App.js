@@ -1,14 +1,27 @@
-import VotingContainer from "./pages/voting/index.js";
-
-
+import {Routes, Route} from "react-router";
 import {useContext} from "react";
+
+import Layout from "./components/layout/index";
 import {ThemeContext} from "./contexts/ThemeContext";
+import VotingContainer from "./pages/voting/index.js";
+import Contacts from "./pages/contacts";
+import NotFound from "./pages/NotFound";
+import Post from "./pages/post";
+
 
 function App() {
     const {theme} = useContext(ThemeContext);
     return (
         <div className={`App mode-${theme}`}>
-            <VotingContainer/>
+            <Routes>
+                <Route path="/" element={<Layout/>}>
+                    <Route index element={<VotingContainer/>}/>
+                    <Route path="contacts" element={<Contacts/>}/>
+                    <Route path="post" element={<Post/>}/>
+                    <Route path="*" element={<NotFound/>}/>
+                </Route>
+            </Routes>
+
         </div>
     );
 }

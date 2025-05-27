@@ -43,14 +43,3 @@
     display: flex;
     gap: 20px;
 }
-
-
-.mode-dark {
-    background-color: #000;
-    color: #fff;
-}
-
-.mode-light {
-    background-color: #fff;
-    color: #000;
-}

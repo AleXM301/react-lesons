@@ -12,7 +12,7 @@ export default function EmojiVoting() {
 
     const {theme} = useContext(ThemeContext);
     const {
-        emoji,
+        emojis,
         winners,
         changeVote,
         showWinners,
@@ -23,7 +23,7 @@ export default function EmojiVoting() {
     return (
         <div className={`${styles[`voting-container`]} ${styles[`mode-${theme}`]}`}>
             <h1 className={styles[`voting-title`]}>Voting emoji</h1>
-            <List voting={emoji} changeVote={changeVote}/>
+            <List voting={emojis} changeVote={changeVote}/>
             <div className={styles[`button-container`]}>
                 <button className={styles.button}
                         onClick={viewWinners}>{showWinners ? "Hide Winner" : "View Winner"}</button>

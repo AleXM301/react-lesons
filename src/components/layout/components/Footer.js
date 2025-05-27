@@ -1,7 +1,7 @@
 import {useContext} from "react";
-import {ThemeContext} from "../contexts/ThemeContext";
+import {ThemeContext} from "../../../contexts/ThemeContext";
 
-import styles from "./Footer.module.css";
+import styles from "../style/Footer.module.css";
 
 export default function Footer() {
 
@@ -10,5 +10,5 @@ export default function Footer() {
         <footer className={`${styles.footer} ${styles[`mode-${theme}`]}`}>
             <h2 className={styles[`footer-title`]}>Footer</h2>
         </footer>
-    );
-};
+    )
+}

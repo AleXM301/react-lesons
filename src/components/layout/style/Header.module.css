@@ -1,0 +1,41 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 12px;
+}
+.header-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.header-links{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+.header-button {
+    font-size: 20px;
+    background: none;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+.header-button:focus {
+    outline: none;
+}
+.header-button:active {
+    opacity: 0.8;
+}
+.mode-dark.header {
+    background-color: var(--color-dark-header);
+    color: var(--color-light-header);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.mode-light.header {
+    background-color: var(--color-light-header);
+    color: var(--color-dark);
+    transition: background-color 0.3s, color 0.3s;
+
+}
