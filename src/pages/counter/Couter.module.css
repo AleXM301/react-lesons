@@ -1,0 +1,26 @@
+.counter-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    margin-top: 60px;
+}
+.button-container{
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+.button-counter {
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #3c3cff;
+    padding: 10px;
+    transform: scale(1.1);
+    transition: 0.1s;
+    margin: 10px 0;
+}
+
+.button-counter:active {
+    background-color: #2f2fcd;
+}

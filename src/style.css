@@ -1,10 +1,11 @@
 :root {
-    --color-light: #fff;
-    --color-dark: #000;
+    --color-light: #F5F5F5;
+    --color-dark: #1E1E1E;
 
-    --color-light-header: #ececec;
+    --color-light-layout: #ffffff;
     --color-dark-header: #101010;
 }
+
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
@@ -30,7 +31,8 @@ html, body, #root {
     margin: 0;
     padding: 0;
 }
-#root{
+
+#root {
     display: flex;
     height: 100%;
 }
@@ -39,20 +41,24 @@ html, body, #root {
     display: flex;
     flex-direction: column;
     flex: 1;
-
 }
-a{
+
+a {
     text-decoration: none;
 }
+
 .mode-dark .active-link {
     color: #d3d3d3;
 }
+
 .mode-dark .inactive-link {
     color: #fff;
 }
+
 .mode-light .active-link {
     color: #000;
 }
+
 .mode-light .inactive-link {
     color: #000;
 }

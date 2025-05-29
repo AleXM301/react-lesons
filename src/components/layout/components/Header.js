@@ -7,9 +7,9 @@ import styles from "../style/Header.module.css";
 import ThemeToggleButton from "../../buttons/theme/ThemeToggleButton";
 
 export default function Header() {
-    const status = ({isActive}) => isActive ? "nav-link active-link" : " nav-link inactive-link"
 
     const {theme} = useContext(ThemeContext);
+    const status = ({isActive}) => isActive ? "nav-link active-link" : " nav-link inactive-link"
 
     return (
         <header className={`${styles.header} ${styles[`mode-${theme}`]}`}>
@@ -20,11 +20,11 @@ export default function Header() {
                     <NavLink className={status} to="/">Home</NavLink>
                     <NavLink className={status} to="/contacts">Contacts</NavLink>
                     <NavLink className={status} to="/post">Post</NavLink>
+                    <NavLink className={status} to="/counter">Counter</NavLink>
+                    <NavLink className={status} to="/todo">Todo_</NavLink>
                 </div>
-
                 <ThemeToggleButton/>
             </div>
-
         </header>
     );
 

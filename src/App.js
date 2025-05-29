@@ -7,7 +7,8 @@ import VotingContainer from "./pages/voting/index.js";
 import Contacts from "./pages/contacts";
 import NotFound from "./pages/NotFound";
 import Post from "./pages/post";
-
+import Counter from "./pages/counter";
+import Todo from "./pages/todo";
 
 function App() {
     const {theme} = useContext(ThemeContext);
@@ -18,10 +19,11 @@ function App() {
                     <Route index element={<VotingContainer/>}/>
                     <Route path="contacts" element={<Contacts/>}/>
                     <Route path="post" element={<Post/>}/>
+                    <Route path="counter" element={<Counter/>}/>
+                    <Route path="todo" element={<Todo/>}/>
                     <Route path="*" element={<NotFound/>}/>
                 </Route>
             </Routes>
-
         </div>
     );
 }

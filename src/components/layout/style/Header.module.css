@@ -7,7 +7,7 @@
 .header-container{
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 54px;
 }
 .header-links{
     display: flex;
@@ -29,12 +29,12 @@
 }
 .mode-dark.header {
     background-color: var(--color-dark-header);
-    color: var(--color-light-header);
+    color: var(--color-light-layout);
     transition: background-color 0.3s, color 0.3s;
 }
 
 .mode-light.header {
-    background-color: var(--color-light-header);
+    background-color: var(--color-light-layout);
     color: var(--color-dark);
     transition: background-color 0.3s, color 0.3s;
 

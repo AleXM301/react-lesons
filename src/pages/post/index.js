@@ -31,7 +31,7 @@ export default function Post() {
     }
     return (
         <div className={styles["post-wrapper"]}>
-            <h3>Post </h3>
+            <h1 className={`${styles[`post-global-title`]} ${styles[`mode-${theme}`]}`}>Post </h1>
             <div className={`${styles[`post-container`]} ${styles[`mode-${theme}`]}`}>
                 {posts.map(post => (
                     <div key={post.id} className={`${styles[`post`]} ${styles[`mode-${theme}`]}`}>
