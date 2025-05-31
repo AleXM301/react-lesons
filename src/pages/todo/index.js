@@ -1,27 +1,34 @@
-import {useSelector} from "react-redux";
-import {useContext} from "react";
-import {ThemeContext} from "../../contexts/ThemeContext";
+    import {useSelector} from "react-redux";
+    import {useContext, useEffect,} from "react";
+    import {ThemeContext} from "../../contexts/ThemeContext";
+    import {useDispatch} from "react-redux";
+    import {getAllTodo} from "../../store/thunks/todoThunk";
 
-import style from "./todo.module.css";
-import TodoForm from "./components/todoForm";
+    import TodoForm from "./components/todoForm";
 
-export default function Todo() {
+    import style from "./todo.module.css";
 
-    const todos = useSelector(state => state.todo);
-    const {theme} = useContext(ThemeContext);
+    export default function Todo() {
+const dispatch = useDispatch();
+        const {todos} = useSelector(state => state.todos);
+        useEffect(()=>{
+            dispatch(getAllTodo());
+        },[dispatch]);
 
-    return (
-        <div className={style[`todo-wrapper`]}>
-            <div className={style[`todos-container`]}>
-                <TodoForm/>
-                {todos.map((todo) =>
-                    <div
-                        className={`${style[`todo`]} ${style[`mode-${theme}`]}`}
-                        key={todo.id}>
-                        {todo.body}
-                    </div>
-                )}
+        const {theme} = useContext(ThemeContext);
+        return (
+            <div className={style[`todo-wrapper`]}>
+                <div className={style[`todos-container`]}>
+                    <TodoForm/>
+                    {todos.map((todo) =>
+                        <div
+                            className={`${style[`todo`]} ${style[`mode-${theme}`]}`}
+                            key={todo.id}>
+                            {todo.title}
+                        </div>)
+
+                    }
+                </div>
             </div>
-        </div>
-    )
-}
+        );
+    };

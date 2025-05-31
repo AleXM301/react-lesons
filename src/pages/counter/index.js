@@ -1,6 +1,7 @@
 import {useDispatch, useSelector} from "react-redux";
 
-import {increment, decrement} from "../../store/actions/counterActions";
+
+import {increment, decrement, } from "../../store/slices/counterSlice";
 import stales from "./Couter.module.css"
 export default function Counter(){
 const dispatch = useDispatch();

@@ -9,7 +9,7 @@ export default function Footer() {
 
     const {theme} = useContext(ThemeContext);
     const {pathname} = useLocation();
-    const todos = useSelector(state => state.todo);
+    const {todos} = useSelector(state => state.todos);
 
     return (
         <footer className={`${styles.footer} ${styles[`mode-${theme}`]}`}>
